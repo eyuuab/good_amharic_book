@@ -1,0 +1,170 @@
+*
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.book-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  width: 250px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.book-card-img{
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+.book-card-img img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-card-title {
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;
+  color: #313131;
+  text-shadow: 2px 0.5px rgba(0, 0, 0, 0.1);
+}
+.book-card:hover {
+
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+  
+}
+/* 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  color: #313131;
+  font-family: "Times New Roman", serif;
+  background-color: #673ab7;
+  background: linear-gradient(
+    45deg,
+    rgba(103,58,183,1) 0%,
+    rgba(138,34,170,1) 100%
+  );
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.book-card {
+  width: 280px;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow:
+    0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+
+  .book-card__cover {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto 8px auto;
+    perspective: 1000px;
+  }
+  
+  .book-card__book {
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 250ms ease;
+  }
+
+  .book-card__book-front {
+    position: absolute;
+    height: 100%;
+  }
+   
+   .book-card__book-back {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transform: translateZ(-40px);
+   }
+
+  .book-card__book-side {
+    position: absolute;
+    top: 5px;
+    bottom: 2px;
+    right: -29px;
+    width: 40px;
+    background-size: 5px;
+    background-color: #e1e1e1;
+    background-image: linear-gradient(to right, #ccc 35%, #e1e1e1 35%);
+    opacity: 0;
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+   
+  .book-card__img {
+    width: 100%;
+    height: 100%;
+    background-color: #e1e1e1;
+  }
+
+  .book-card__title {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+
+  .book-card__author {
+    color: #757575;
+    font-size: 1em;
+  }
+
+
+  &:hover {
+    .book-card__book{
+      transform: rotate3d(0, -1, 0, 30deg) translate(-15px, -30px);
+    }
+    
+    .book-card__book-back {
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35);
+    }
+    
+    .book-card__book-side {
+      opacity: 1;
+    }
+  }
+} */

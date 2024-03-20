@@ -1,0 +1,86 @@
+.home-welcome {
+  background-image: url("../../public/images/bible_bg.jpeg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-welcome h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.intro {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  background-color: #f0eeee;
+}
+
+.intro-notice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.intro-site-description {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.intro h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.coffee {
+    width: 95%;
+    background-color: #f0eeee;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .footer h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .footer td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .footer .english {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .footer .english:hover {
+    color: darkblue;
+  }
+  
+  .footer td:first-child {
+    font-weight: bold;
+  }
+  
+  .footer td:last-child {
+    text-align: right;
+  }
