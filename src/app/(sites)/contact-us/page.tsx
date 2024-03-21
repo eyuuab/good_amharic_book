@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-
+import './contactUs.css'
 import {
   GetCountries,
   GetStates,
@@ -49,8 +49,8 @@ const Page = () => {
   };
 
   return (
-    <div className='pt-20 bg-gray-100' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <div style={{ width: '50%' }}>
+    <div className='pt-20 body' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <div  className="wrapper" style={{ width: '50%' }}>
         <h1 className="text-2xl font-bold mb-4" style={{ color: "black", textAlign: "center" }}>እንዚህ ሁሉ መጸሃፍት ከሌሎች ጥቂት የእንግሊዝኛ መጽሃፍት ጋር በሲዲ ተዘጋጅተው ለግዢ ዝግጁ ናቸው፡፡ የበለጠ ለመረዳት በtexlap@juno.com ጻፉልን፡፡</h1>
         <form id="contactForm" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'center' }}>
           <div style={{ display: 'flex', gap: '20px' }}>
