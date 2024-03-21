@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  z-index: -3;
 }
 
 .home-welcome h1 {
@@ -15,12 +16,14 @@
   color: white;
   font-size: 3rem;
   font-weight: bold;
+  z-index: -4;
 }
 .intro {
   margin: 20px;
   padding: 20px;
   width: 80%;
   background-color: #f0eeee;
+  border-radius: 20px;
 }
 
 .intro-notice {
@@ -39,48 +42,94 @@
   font-weight: bold;
   margin-top: 20px;
 }
+.coffee-rapper {
+  width: 85%;
+  padding: 10px;
+  background-color: rgb(249, 224, 193);
+  font-size: x-large;
+  border-radius: 10px;
+}
 .coffee {
-    width: 95%;
-    background-color: #f0eeee;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+  height: 200px;
+  display: flex;
+  margin: 2rem;
+  gap: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.eng-lang{
+  display: flex;
   
-  .footer h3 {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
+}
+.feedback {
+  padding: 10px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  line-height: 1.5;
+  border: 5px solid rgb(174, 155, 126);
+}
+.text-container {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  background-color: #f0eeee;
+  border-radius: 20px;
+}
+.text-container p {
+  margin-bottom: 10px;
+}
+
+.text-container .quote {
+  font-style: italic;
+}
+
+.text-container .thanks {
+  font-weight: bold;
+}
+
+.text-container .blessing {
+  text-align: center;
+}
+/* Add CSS for mobile size features */
+@media only screen and (max-width: 768px) {
+  .home-welcome {
+    height: 300px; /* Adjust the height of the home-welcome section */
   }
-  
-  .footer table {
-    margin-top: 20px;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .footer td {
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .footer .english {
-    color: blue;
-    text-decoration: underline;
-  }
-  
-  .footer .english:hover {
-    color: darkblue;
-  }
-  
-  .footer td:first-child {
+
+  .home-welcome h1 {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the h1 vertically and horizontally */
+    color: white;
+    font-size: 3rem;
     font-weight: bold;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
   }
-  
-  .footer td:last-child {
-    text-align: right;
+
+  .intro,
+  .text-container {
+    width: 90%; /* Adjust the width of intro and text-container */
   }
+
+  .coffee-rapper {
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+
+  .sidebar-clicked .home-welcome h1 {
+    transform: translate(-50%, 20%); /* Move the h1 further down when sidebar is clicked */
+  }
+}
+
